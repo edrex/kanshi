@@ -1,2 +1,4 @@
+CC ?= cc
+
 all:
-	cc -o kanshi kanshi.c -lwayland-client
+	$(CC) -o kanshi -Wall -lwayland-client kanshi.c
